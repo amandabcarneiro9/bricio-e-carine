@@ -1,12 +1,12 @@
-import './App.scss';
-import Header from './components/header/Header'
-import flower from './images/one-flower.jpg'
-
+import "./App.scss";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
 
 function App() {
   return (
     <div className="App">
-      {/* <img src={flower} alt="flower"/> */}
+      <Header />
+      <Main />
     </div>
   );
 }
