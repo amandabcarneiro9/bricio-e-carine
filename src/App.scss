@@ -1,0 +1,17 @@
+.App {
+  max-width: 1600px;
+  background-image: url("./images/one-flower.jpg");
+  
+}
+ body{
+  background-image: url("./images/one-flower2.jpg"),url("./images/one-flower3.jpg");
+  background-size: 36vw auto,36vw auto;
+  background-repeat: no-repeat,no-repeat;
+  background-position: top right,top left;
+  background-color:#dbd3c3 ;
+ }
+
+img{
+  width: 100%;
+  
+}
