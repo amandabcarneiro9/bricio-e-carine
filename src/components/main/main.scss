@@ -1,0 +1,44 @@
+@import "../../scss/media-queries.scss";
+
+.main {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  .__names {
+    font-size: 8vw;
+    display: inline-block;
+    margin: 0;
+    color: #5a3d1b;
+  }
+
+  .__mention {
+    font-size: 4vw;
+    color: #796a4f;
+    display: block;
+    margin: 0;
+    font-family: "Square Peg", cursive;
+  }
+
+  .__date {
+    font-size: 2vw;
+    color: #5a3d1b;
+    font-weight: bold;
+  }
+
+  .__photo {
+    margin-top: 4vw;
+    width: 70%;
+    margin-bottom: 4vw;
+
+    @include for-desktop-and-large {
+      width: 30%;
+    }
+    img {
+      border-radius: 50%;
+    }
+  }
+}
