@@ -1,0 +1,17 @@
+@import "../../scss/media-queries.scss";
+
+.links-container {
+  @include for-phone {
+    display: none;
+  }
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+
+  .__nav-button {
+    text-transform: capitalize;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+}

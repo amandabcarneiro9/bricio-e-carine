@@ -1,30 +1,56 @@
 @import "../../scss/media-queries.scss";
 
 .header {
+  .__nav-links {
+    display: none;
+  }
   @include for-phone {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100px auto;
+    grid-template-areas:
+      "hamburguer initials"
+      "links links";
+
     &.--menu-opened {
-      width: 100vw;
+      width: 60%;
       height: 100vh;
       position: fixed;
       top: 0;
-      background: lightgray;
+      background-color: rgba(121, 106, 79, 0.95);
       z-index: 1000;
       left: 0;
-    }
 
-    .hamburger-react {
-      color: #796a4f;
-      margin-top: 10px;
-      margin-left: 15px;
+      .__nav-links {
+        display: flex;
+        flex-direction: column;
+        grid-area: links;
+
+        .__link {
+          text-decoration: none;
+          text-align: center;
+          font-size: 10vw;
+          margin-top: 20px;
+          color: #412f22;
+          text-transform: capitalize;
+          font-weight: bold;
+        }
+      }
     }
 
     h2 {
-      flex: 1 1 auto;
       text-align: center;
-      color: #796a4f;
+      color: #5a3d1b;
       font-size: 3em;
-      margin: 10px;
+      margin: 25px;
+      grid-area: initials;
+    }
+
+    .hamburger-react {
+      color: #5a3d1b;
+      margin-top: 25px;
+      margin-left: 15px;
+      grid-area: hamburguer;
     }
   }
 
