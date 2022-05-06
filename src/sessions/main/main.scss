@@ -8,21 +8,19 @@
   margin-top: 50px;
   padding-bottom: 4vw;
 
-  // .__names {
-  //   font-size: 8vw;
-  //   display: inline-block;
-  //   text-align: center;
-  //   margin: 0;
-  //   color: #5a3d1b;
-  // }
+  .__mention {
+    font-size: 8vw;
+    color: #796a4f;
+    display: block;
+    margin-left: 10px;
+    font-family: "Square Peg", cursive;
+    text-align: center;
 
-  // .__mention {
-  //   font-size: 4vw;
-  //   color: #796a4f;
-  //   display: block;
-  //   margin: 0;
-  //   font-family: "Square Peg", cursive;
-  // }
+    @include for-desktop-and-large {
+      font-size: 6vw;
+      margin: 0;
+    }
+  }
 
   .__date {
     font-size: 2vw;

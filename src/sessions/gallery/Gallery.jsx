@@ -19,7 +19,14 @@ export default function Gallery() {
   return (
     <div className="container">
       <div className="__gallery">
-        <h2>Caminhe pela nossa história através das nossas fotos</h2>
+        <p className="__history">
+          Nos conhecemos dia 28/12/2020 na internet, passamos a sair e nos
+          conhecermos melhor, tiveram momentos bons e ruins, quando todos
+          duvidaram de nós dois nos acreditamos que daria certo e lutamos um
+          pelo outro. Ele morando em Caçapava, trabalhando viajando pelo estado
+          de São Paulo e eu morando em Campos do Jordão, trabalhando e torcendo
+          para que o final de semana chegasse.
+        </p>
         <div className="__main-photo">
           <img
             src={photos[currentPhoto]}
@@ -39,6 +46,13 @@ export default function Gallery() {
             />
           ))}
         </div>
+        <p className="__history">
+          E no dia 14/08/2021 ele me pediu em noivado, foi uma surpresa
+          maravilhosa no Capivari em Campos do Jordão, no mesmo local onde me
+          pediu em namoro, eu fiquei tão feliz que fiquei em choque, não sabia o
+          que fazer rs, foi um dos melhores momentos de nós dois, e desde então
+          estamos morando juntos e planejando esse tão sonhado dia.
+        </p>
       </div>
     </div>
   );

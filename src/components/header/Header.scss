@@ -21,22 +21,18 @@
     }
   }
 
-  .__mention {
-    grid-area: mention;
-    font-size: 10vw;
-    text-align: center;
-    color: #796a4f;
-    font-family: "Square Peg", cursive;
-    margin: 0 auto;
-
-    @include for-desktop-and-large {
-      font-size: 4vw;
-    }
-  }
-
   .__nav-bar {
     position: fixed;
     top: 0;
+    z-index: 2;
+
+    .__close {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0vw;
+    }
 
     .__menu {
       display: none;
@@ -49,12 +45,15 @@
         background-color: rgba(121, 106, 79, 0.95);
         z-index: 1000;
         left: 0;
-        //     display: grid;
-        //     grid-template-columns: 20% 80%;
-        //     grid-template-rows: 100px auto;
-        //     grid-template-areas:
-        //       "hamburguer initials"
-        //       "links links";
+        grid-template-columns: 10% auto;
+        grid-template-rows: 100px auto;
+        grid-template-areas:
+          " hambuguer initials"
+          "links links";
+
+        @include for-desktop-and-large {
+          width: 40vw;
+        }
       }
     }
 
@@ -63,8 +62,8 @@
       text-align: center;
       color: #5a3d1b;
       font-size: 3em;
-      margin: 25px;
       grid-area: initials;
+      align-self: center;
     }
   }
 }
