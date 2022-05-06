@@ -1,0 +1,28 @@
+@import "../../scss/media-queries.scss";
+
+.__gallery {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 0 auto;
+
+  .__main-photo {
+    align-items: center;
+
+    .__image {
+      object-fit: contain;
+      width: 80vw;
+      height: 80vw;
+    }
+  }
+
+  .__set-photos {
+    display: flex;
+    justify-content: space-around;
+
+    .__small-photo {
+      width: 16.666%;
+      opacity: 0.7;
+    }
+  }
+}

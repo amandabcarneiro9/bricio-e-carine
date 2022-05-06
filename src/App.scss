@@ -1,5 +1,7 @@
 .App {
   max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 body {
   background-image: url("./images/one-flower2.jpg"),
@@ -9,6 +11,7 @@ body {
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: top right, top left, bottom left, bottom right;
   background-color: #dbd3c3;
+  min-height: 100vh;
 }
 
 img {
