@@ -18,6 +18,10 @@
       color: #5a3d1b;
       align-self: start;
       grid-area: names;
+
+      &:hover {
+        color: #412f22;
+      }
     }
   }
 

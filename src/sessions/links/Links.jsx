@@ -1,16 +1,22 @@
 import "./links.scss";
 import { Link } from "react-router-dom";
 
-export default function Links() {
+export default function Links({ onClose }) {
   return (
     <div className="nav-links">
-      <Link to="/gallery">
-        <div className="__link">photos</div>
+      <Link to="/gallery" className="__link" onClick={onClose}>
+        Caminhe pela nossa historia
+      </Link>
+      <Link to="/presentes" className="__link" onClick={onClose}>
+        lista de presentes
+      </Link>
+      <Link to="/mapa" className="__link" onClick={onClose}>
+        mapa do local
       </Link>
 
-      <div className="__link">lista de presentes</div>
-      <div className="__link">confirme sua presença</div>
-      <div className="__link">mapa</div>
+      <Link to="/gallery" className="__link" onClick={onClose}>
+        confirme sua presença
+      </Link>
     </div>
   );
 }

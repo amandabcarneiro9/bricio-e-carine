@@ -19,7 +19,7 @@ export default function Header() {
         {isOpen && <div className="__close" onClick={close} />}
         <div className={`__menu ${isOpen ? "--menu-opened" : ""}`}>
           <h2 clas>C & F</h2>
-          <Links />
+          <Links onClose={close} />
         </div>
       </div>
     </header>
