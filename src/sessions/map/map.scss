@@ -1,0 +1,48 @@
+@import "../../scss/media-queries.scss";
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Square Peg", cursive;
+  color: #796a4f;
+  font-size: 6vw;
+
+  @include for-desktop-and-large {
+    font-size: 3em;
+  }
+
+  .__informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: solid;
+
+    .__date {
+      font-weight: bold;
+      color: #5a3d1b;
+    }
+  }
+
+  .__call-to-come {
+    font-size: 8vw;
+    text-align: center;
+    margin-bottom: 30px;
+    margin: 20px;
+    line-height: 1;
+
+    @include for-desktop-and-large {
+      font-size: 5vw;
+    }
+  }
+
+  .__confirmation {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
