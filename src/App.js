@@ -5,6 +5,7 @@ import Main from "./sessions/main/Main";
 import Presentes from "./sessions/presentes/Presentes";
 import Gallery from "./sessions/gallery/Gallery";
 import Map from "./sessions/map/Map";
+import Confirme from "./sessions/confirm/Confirm";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/presentes" element={<Presentes />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/mapa" element={<Map />} />
+          <Route path="/confirme-sua-presenca" element={<Confirme />} />
           <Route path="/" element={<Main />} />
         </Routes>
         <Footer />

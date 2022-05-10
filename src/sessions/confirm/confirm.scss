@@ -1,0 +1,42 @@
+@import "..//../scss//media-queries.scss";
+
+.confirme-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 8vw;
+  font-family: "Square Peg", cursive;
+  text-align: center;
+  color: #796a4f;
+  margin: 20px;
+  height: 100%;
+
+  @include for-desktop-and-large {
+    font-size: 4vw;
+  }
+
+  .__link-to-wpp {
+    text-transform: uppercase;
+    color: #5a3d1b;
+    margin: 50px 0 50px 0;
+    display: inline-block;
+    width: 310px;
+    height: 8vw;
+    line-height: 8vw;
+
+    &:hover {
+      color: #796a4f;
+    }
+  }
+
+  .__text-send {
+    font-size: 5vw;
+    color: #5a3d1b;
+    margin: 10px 10px 10px 10px;
+
+    @include for-desktop-and-large {
+      font-size: 3vw;
+    }
+  }
+}

@@ -14,7 +14,7 @@ export default function Links({ onClose }) {
         mapa do local
       </Link>
 
-      <Link to="/gallery" className="__link" onClick={onClose}>
+      <Link to="/confirme-sua-presenca" className="__link" onClick={onClose}>
         confirme sua presença
       </Link>
     </div>
