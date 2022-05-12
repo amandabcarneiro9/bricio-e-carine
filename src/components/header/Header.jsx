@@ -18,7 +18,9 @@ export default function Header() {
         <Hamburger toggled={isOpen} toggle={setOpen} size={60} />
         {isOpen && <div className="__close" onClick={close} />}
         <div className={`__menu ${isOpen ? "--menu-opened" : ""}`}>
-          <h2 clas>C & F</h2>
+          <a className="__initials" href="/">
+            C & F
+          </a>
           <Links onClose={close} />
         </div>
       </div>

@@ -1,0 +1,25 @@
+@import "../../scss/media-queries.scss";
+
+.product_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 50px;
+
+  .__products {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1 1 1 1 1;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    @include for-desktop-and-large {
+      grid-template-columns: 200px 200px 200px 200px;
+      grid-template-rows: 200px;
+    }
+  }
+}

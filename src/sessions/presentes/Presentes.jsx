@@ -1,7 +1,7 @@
 import "./presentes.scss";
 import casasBahia from "../../images/Casas_Bahia.png";
 import havan from "../../images/havan-logo-6.png";
-
+import Products from "../../components/products/Products";
 export default function Presentes() {
   return (
     <div className="presentes">
@@ -36,6 +36,8 @@ export default function Presentes() {
           <img src={havan} alt="logo das Havan" className="__image" />
         </a>
       </div>
+
+      <Products />
     </div>
   );
 }
