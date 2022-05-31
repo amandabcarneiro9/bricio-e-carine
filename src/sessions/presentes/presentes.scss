@@ -9,6 +9,7 @@
   .__title {
     font-size: 5vw;
     color: #5a3d1b;
+    margin: 0 auto;
   }
 
   .__message {
@@ -16,6 +17,15 @@
     font-size: 6vw;
     text-align: center;
     color: #796a4f;
+
+    @include for-desktop-and-large {
+      font-size: 3vw;
+      margin: 20px;
+    }
+  }
+
+  .__note {
+    font-size: 3vw;
   }
 
   .__links {

@@ -44,5 +44,14 @@
     width: 80%;
     text-align: center;
     margin-bottom: 50px;
+
+    a {
+      text-transform: uppercase;
+      color: #5a3d1b;
+
+      &:hover {
+        color: white;
+      }
+    }
   }
 }
