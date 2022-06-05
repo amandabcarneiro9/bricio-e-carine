@@ -8,9 +8,12 @@ export default function Map() {
         <br /> Você é o nosso convidado especial!
       </div>
       <div className="__informations">
-        <span className="__date">Sábado 17 Setembro 2022 16:00hs</span>
+        <span className="__date">
+          Sábado 17 Setembro 2022 16:00hs <br />
+          Cerimônia e Recepção
+        </span>
         <span className="__location">
-          Cerimônia e Recepção: Rua Tereza Teodolinda Galvani n°200,
+          Rua Tereza Teodolinda Galvani n°200,
           <br /> São João da Boa Vista – Caçapava – SP
         </span>
       </div>

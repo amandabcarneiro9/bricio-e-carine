@@ -65,10 +65,14 @@
       display: block;
       text-align: center;
       color: #5a3d1b;
-      font-size: 3em;
+      font-size: 12vw;
       grid-area: initials;
       align-self: center;
       text-decoration: none;
+
+      @include for-desktop-and-large {
+        font-size: 80px;
+      }
 
       &:hover {
         color: white;

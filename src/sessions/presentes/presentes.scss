@@ -24,7 +24,11 @@
   }
 
   .__note {
-    font-size: 3vw;
+    font-size: 5vw;
+
+    @include for-desktop-and-large {
+      font-size: 32px;
+    }
   }
 
   .__links {
