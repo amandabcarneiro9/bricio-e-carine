@@ -7,11 +7,6 @@
   align-items: center;
   font-family: "Square Peg", cursive;
   color: #796a4f;
-  font-size: 6vw;
-
-  @include for-desktop-and-large {
-    font-size: 3em;
-  }
 
   .__informations {
     display: flex;

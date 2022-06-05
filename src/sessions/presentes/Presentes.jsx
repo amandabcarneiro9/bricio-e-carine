@@ -7,10 +7,10 @@ export default function Presentes() {
     <div className="presentes">
       <h2 className="__title">Nossa lista de presentes</h2>
       <p className="__message">
-        Querido convidado, seja bem-vindo a nossa lista de presentes.
-        <br /> Pensamos em tudo com muito carinho para que você se sinta a
-        vontade para nos presentear com o que puder. <br />
-        Tenho certeza que qualquer contribuição nos fará felizes!!
+        Querido convidado, seja bem-vindo a nossa lista de presentes. Pensamos
+        em tudo com muito carinho para que você se sinta a vontade para nos
+        presentear com o que puder. Tenho certeza que qualquer contribuição nos
+        fará felizes!!
       </p>
       <span className="__note">
         Você pode encontrar nossa lista nas seguintes lojas:
