@@ -13,7 +13,7 @@ export default function Presentes() {
         fará felizes!!
       </p>
       <span className="__note">
-        Você pode encontrar nossa lista nas seguintes lojas:
+        Você pode encontrar nossa lista clicando em uma das lojas abaixo:
       </span>
       <div className="__links">
         <a
@@ -37,7 +37,7 @@ export default function Presentes() {
         </a>
       </div>
 
-      <Products />
+      {/* <Products /> */}
     </div>
   );
 }
